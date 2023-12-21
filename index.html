@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>APIS EM PRATICA</title>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white"><img class="rounded-circle"
+          src="https://static.vecteezy.com/ti/vetor-gratis/p3/20067674-kns-abstrato-tecnologia-circulo-configuracao-logotipo-projeto-em-preto-fundo-kns-criativo-iniciais-carta-logotipo-vetor.jpg"
+          width="50px" height="50px" /></a>
+      <a class="navbar-brand text-white mx-auto jus"><b>Biblioteca Virtual</b> 📚📖</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" id="barraDePesquisa" type="search" placeholder="Pesquise Livros"
+            aria-label="Search" required>
+          <button class="btn btn-outline-light" type="button" id="confirmarBtn">Confirmar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <br>
+  <br>
+  <br>
+
+  <main class="container-fluid justify-content-center">
+
+    <!-- Container para exibir os cards -->
+    <div class="row row-cols-1 row-cols-md-4 g-5 p-3 m-2 gap-3 justify-content-center" id="cardContainer"></div>
+    
+  </main>
+
+</body>
+
+</html>
+
+
+<!-- <script>
+  //FUNÇÃO PARA PUXAR MEU BANCO.JSON
+  const Http = new XMLHttpRequest();
+  const url = 'http://127.0.0.1:3000/livros';
+  Http.open("GET", url);
+  Http.send();
+
+  Http.onreadystatechange = (e) => {
+    console.log(Http.responseText)
+
+    var resultado = JSON.parse(Http.responseText)
+    console.log(resultado);
+  }
+  
+</script> -->
